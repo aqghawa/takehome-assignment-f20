@@ -39,7 +39,6 @@ export default {
   methods: {
     handleSubmit: function(){
       let new_id = parseInt(this.shows[this.shows.length - 1]['id']) + 1;
-      console.log(new_id)
       let newname=this.$refs.sname.value
       this.shows.push({id: new_id, name: newname, episodes_seen: 0}) 
     }
